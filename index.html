@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4f46e5;
-            --primary-dark: #4338ca;
+            --primary: #6d28d9;
+            --primary-dark: #5b21b6;
             --secondary: #10b981;
             --accent: #f59e0b;
             --glass: rgba(255, 255, 255, 0.2);
@@ -27,9 +27,9 @@
             background-color: #f8fafc;
         }
         
-        /* Modern gradient background */
-        .gradient-bg {
-            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 50%, #f3f4f6 100%);
+        /* Modern background */
+        .solid-bg {
+            background-color: #f3f4f6;
         }
         
         /* Hero section with particle animation */
@@ -53,7 +53,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(79, 70, 229, 0.2) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(109, 40, 217, 0.2) 0%, transparent 50%);
             animation: pulse 15s infinite alternate;
         }
         
@@ -72,19 +72,9 @@
             overflow: hidden;
         }
         
-        /* Animated gradient text */
+        /* Animated text */
         .gradient-text {
-            background: linear-gradient(90deg, #4f46e5, #8b5cf6, #ec4899);
-            background-size: 200% auto;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradient 3s linear infinite;
-        }
-        
-        @keyframes gradient {
-            to { background-position: 200% center; }
+            color: var(--primary);
         }
         
         /* Typewriter effect */
@@ -103,13 +93,13 @@
         }
         
         .typing {
-            border-right: .15em solid #4f46e5;
+            border-right: .15em solid #6d28d9;
             animation: blink-caret .75s step-end infinite;
         }
         
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: #4f46e5; }
+            50% { border-color: #6d28d9; }
         }
 
         /* Responsive adjustments */
@@ -157,12 +147,12 @@
             overflow: hidden;
             transition: all 0.4s ease;
             transform: translateY(0);
-            box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+            box-shadow: 0 4px 6px rgba(109, 40, 217, 0.2);
         }
         
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 15px rgba(79, 70, 229, 0.3);
+            box-shadow: 0 10px 15px rgba(109, 40, 217, 0.3);
         }
         
         .btn-primary::after {
@@ -223,7 +213,7 @@
         
         .process-step:hover .process-icon {
             transform: scale(1.1);
-            filter: drop-shadow(0 5px 15px rgba(79, 70, 229, 0.3));
+            filter: drop-shadow(0 5px 15px rgba(109, 40, 217, 0.3));
         }
         
         /* Preloader */
@@ -276,7 +266,7 @@
         }
         
         .form-input:focus {
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+            box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.3);
             transform: translateY(-2px);
         }
         
@@ -404,7 +394,7 @@
             top: 1rem;
             right: 1rem;
             font-size: 1.5rem;
-            color: #4f46e5;
+            color: #6d28d9;
             cursor: pointer;
             background: #e0e7ff;
             width: 32px;
@@ -429,7 +419,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f46e5' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236d28d9' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         /* Advanced process animations */
@@ -454,9 +444,9 @@
         }
 
         @keyframes pulse-icon {
-            0% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4); }
-            70% { box-shadow: 0 0 0 15px rgba(79, 70, 229, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(109, 40, 217, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(109, 40, 217, 0); }
         }
 
         .process-step-advanced::after {
@@ -493,7 +483,7 @@
         }
     </style>
 </head>
-<body class="gradient-bg">
+<body class="solid-bg">
     <!-- Preloader with animation -->
     <div class="preloader">
         <div class="loader"></div>
@@ -504,30 +494,29 @@
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-xl mr-3 hover:rotate-12 transition-transform">
+                    <div class="bg-purple-700 text-white p-3 rounded-xl mr-3 hover:rotate-12 transition-transform">
                         <i class="fas fa-house-medical text-2xl"></i>
                     </div>
-                    <h1 class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+                    <h1 class="text-2xl md:text-3xl font-bold text-purple-700">
                         HABARI DOCTOR
                     </h1>
                 </div>
                 
                 <nav class="hidden md:flex space-x-10">
-                    <a href="#home" class="nav-link text-gray-800 font-medium hover:text-indigo-600">Home</a>
-                    <a href="#about" class="nav-link text-gray-800 font-medium hover:text-indigo-600">About Us</a>
-                    <a href="#services" class="nav-link text-gray-800 font-medium hover:text-indigo-600">Services</a>
-                    <a href="#process" class="nav-link text-gray-800 font-medium hover:text-indigo-600">Process</a>
-                    <a href="#testimonials" class="nav-link text-gray-800 font-medium hover:text-indigo-600">Testimonials</a>
-                    <a href="#contact" class="nav-link text-gray-800 font-medium hover:text-indigo-600">Contact</a>
+                    <a href="#home" class="nav-link text-gray-800 font-medium hover:text-purple-700">Home</a>
+                    <a href="#process" class="nav-link text-gray-800 font-medium hover:text-purple-700">Process</a>
+                    <a href="#services" class="nav-link text-gray-800 font-medium hover:text-purple-700">Services</a>
+                    <a href="#about" class="nav-link text-gray-800 font-medium hover:text-purple-700">About Us</a>
+                    <a href="#contact" class="nav-link text-gray-800 font-medium hover:text-purple-700">Contact</a>
                 </nav>
                 
                 <div class="hidden md:block">
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl">
-                        Book Now
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl">
+                        Book Appointment
                     </a>
                 </div>
                 
-                <button class="md:hidden text-gray-800 hover:text-indigo-600 transition-colors" id="menu-toggle">
+                <button class="md:hidden text-gray-800 hover:text-purple-700 transition-colors" id="menu-toggle">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -535,14 +524,13 @@
             <!-- Mobile menu -->
             <div class="md:hidden hidden py-4" id="mobile-menu">
                 <div class="flex flex-col space-y-4">
-                    <a href="#home" class="text-indigo-600 font-medium">Home</a>
-                    <a href="#about" class="text-gray-800 hover:text-indigo-600 font-medium">About Us</a>
-                    <a href="#services" class="text-gray-800 hover:text-indigo-600 font-medium">Services</a>
-                    <a href="#process" class="text-gray-800 hover:text-indigo-600 font-medium">Process</a>
-                    <a href="#testimonials" class="text-gray-800 hover:text-indigo-600 font-medium">Testimonials</a>
-                    <a href="#contact" class="text-gray-800 hover:text-indigo-600 font-medium">Contact</a>
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-2 px-4 rounded-xl text-center mt-2">
-                        Book Now
+                    <a href="#home" class="text-purple-700 font-medium">Home</a>
+                    <a href="#process" class="text-gray-800 hover:text-purple-700 font-medium">Process</a>
+                    <a href="#services" class="text-gray-800 hover:text-purple-700 font-medium">Services</a>
+                    <a href="#about" class="text-gray-800 hover:text-purple-700 font-medium">About Us</a>
+                    <a href="#contact" class="text-gray-800 hover:text-purple-700 font-medium">Contact</a>
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded-xl text-center mt-2">
+                        Book Appointment
                     </a>
                 </div>
             </div>
@@ -566,11 +554,8 @@
                     Experience personalized medical care in the comfort of your home with our expert team of healthcare professionals serving Dar es Salaam.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-1s">
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-xl text-base md:text-lg shadow-lg">
-                        <i class="fas fa-calendar-check mr-2"></i> Schedule a Visit
-                    </a>
-                    <a href="#services" class="bg-white hover:bg-gray-100 text-indigo-600 font-bold py-3 px-6 md:py-4 md:px-10 rounded-xl text-base md:text-lg transition duration-300 hover:shadow-lg">
-                        <i class="fas fa-search mr-2"></i> Explore Services
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 md:py-4 md:px-10 rounded-xl text-base md:text-lg shadow-lg">
+                        <i class="fas fa-calendar-check mr-2"></i> Book Appointment
                     </a>
                 </div>
             </div>
@@ -583,7 +568,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+    <section class="py-16 bg-purple-700 text-white">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="p-6" data-aos="fade-up" data-aos-delay="100">
@@ -617,8 +602,8 @@
                              class="rounded-2xl shadow-2xl w-full h-auto hover:scale-105 transition-transform duration-500">
                         <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-lg w-3/4" data-aos="fade-up" data-aos-delay="300">
                             <div class="flex items-center">
-                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-award text-indigo-600 text-2xl"></i>
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-award text-purple-700 text-2xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg">Certified Professionals</h4>
@@ -638,8 +623,8 @@
                     </p>
                     
                     <div class="space-y-6">
-                        <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                            <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                        <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                            <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                 <i class="fas fa-user-md text-xl"></i>
                             </div>
                             <div>
@@ -648,8 +633,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                            <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                        <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                            <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                 <i class="fas fa-heartbeat text-xl"></i>
                             </div>
                             <div>
@@ -658,8 +643,8 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                            <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                        <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                            <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                 <i class="fas fa-clock text-xl"></i>
                             </div>
                             <div>
@@ -675,20 +660,20 @@
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-50">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+                Our <span class="gradient-text">Comprehensive Services</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                From routine checkups to specialized treatments, we offer a full range of home healthcare services in Dar es Salaam.
+            </p>
+        </div>
+        
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                    Our <span class="gradient-text">Comprehensive Services</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    From routine checkups to specialized treatments, we offer a full range of home healthcare services in Dar es Salaam.
-                </p>
-            </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
                 <div class="card-3d bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="zoom-in">
-                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-8 text-white text-center">
+                    <div class="bg-purple-700 p-8 text-white text-center">
                         <div class="service-icon bg-white/20 p-4 rounded-full inline-block mb-4">
                             <i class="fas fa-home text-4xl"></i>
                         </div>
@@ -714,7 +699,7 @@
                                 <span>Medication management</span>
                             </li>
                         </ul>
-                        <button class="service-learn-more inline-block bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="home-visits">
+                        <button class="service-learn-more inline-block bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="home-visits">
                             Learn More
                         </button>
                     </div>
@@ -722,7 +707,7 @@
                 
                 <!-- Service Card 2 -->
                 <div class="card-3d bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-8 text-white text-center">
+                    <div class="bg-purple-700 p-8 text-white text-center">
                         <div class="service-icon bg-white/20 p-4 rounded-full inline-block mb-4">
                             <i class="fas fa-running text-4xl"></i>
                         </div>
@@ -733,22 +718,22 @@
                         <ul class="space-y-3 mb-6">
                             <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Stroke rehabilitation</span>
+                                <span>Neurological rehabilitation</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Post-surgical recovery</span>
+                                <span>Sports rehabilitation</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Pain management</span>
+                                <span>Lifestyle modifications</span>
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
                                 <span>Mobility improvement</span>
                             </li>
                         </ul>
-                        <button class="service-learn-more inline-block bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="physiotherapy">
+                        <button class="service-learn-more inline-block bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="physiotherapy">
                             Learn More
                         </button>
                     </div>
@@ -756,7 +741,7 @@
                 
                 <!-- Service Card 3 -->
                 <div class="card-3d bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-8 text-white text-center">
+                    <div class="bg-purple-700 p-8 text-white text-center">
                         <div class="service-icon bg-white/20 p-4 rounded-full inline-block mb-4">
                             <i class="fas fa-user-nurse text-4xl"></i>
                         </div>
@@ -782,7 +767,69 @@
                                 <span>Medication administration</span>
                             </li>
                         </ul>
-                        <button class="service-learn-more inline-block bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="nursing-care">
+                        <button class="service-learn-more inline-block bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="nursing-care">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Service Card 4 - Corporate Checkup -->
+                <div class="card-3d bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="bg-purple-700 p-8 text-white text-center">
+                        <div class="service-icon bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-briefcase-medical text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Corporate Checkup</h3>
+                        <p class="opacity-90">Workplace health solutions</p>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Annual checkups</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Health advice and lifestyle modifications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Health awareness at workplace</span>
+                            </li>
+                        </ul>
+                        <button class="service-learn-more inline-block bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="corporate-checkup">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 - Diet -->
+                <div class="card-3d bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="bg-purple-700 p-8 text-white text-center">
+                        <div class="service-icon bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-utensils text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Diet & Nutrition</h3>
+                        <p class="opacity-90">Personalized dietary plans</p>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Diet for chronic diseases (Diabetes, Kidney, Hypertension)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Pediatric diet</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Weight management</span>
+                            </li>
+                        </ul>
+                        <button class="service-learn-more inline-block bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 px-6 rounded-lg transition duration-300" data-service="diet">
                             Learn More
                         </button>
                     </div>
@@ -790,9 +837,110 @@
             </div>
             
             <div class="text-center mt-12" data-aos="fade-up">
-                <button id="view-all-services" class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-xl transition duration-300 hover:shadow-lg">
+                <button id="view-all-services" class="inline-block bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-8 rounded-xl transition duration-300 hover:shadow-lg">
                     View All Services
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 process-bg process-section">
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+                    Our <span class="gradient-text">Simple Process</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Getting started with our home healthcare and rehabilitation services in Dar es Salaam is quick and easy.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Steps with Advanced Animations -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up">
+                        <div class="process-icon-advanced bg-purple-700 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">1. Contact Us</h3>
+                        <p class="text-gray-600">Call, email, or fill out our online form to schedule your first visit.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-icon-advanced bg-purple-700 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">2. Initial Assessment</h3>
+                        <p class="text-gray-600">Our doctor visits your home for a comprehensive health evaluation.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-icon-advanced bg-purple-700 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">3. Personalized Plan</h3>
+                        <p class="text-gray-600">We create a customized treatment plan based on your needs.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-icon-advanced bg-purple-700 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">4. Ongoing Care</h3>
+                        <p class="text-gray-600">We provide regular visits and adjust treatment as needed.</p>
+                    </div>
+                </div>
+                
+                <!-- Process Visualization -->
+                <div class="mt-16 bg-white rounded-2xl shadow-xl p-8" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Visualizing Your Care Journey</h3>
+                            <p class="text-gray-600 mb-6">
+                                Our process is designed to be transparent and patient-focused. From your first contact to ongoing care in Dar es Salaam, we keep you informed every step of the way.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-purple-100 p-2 rounded-lg mr-4">
+                                        <i class="fas fa-clock text-purple-700"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Quick Response</h4>
+                                        <p class="text-gray-600">We respond to all inquiries within 24 hours.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-purple-100 p-2 rounded-lg mr-4">
+                                        <i class="fas fa-calendar-alt text-purple-700"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Flexible Scheduling</h4>
+                                        <p class="text-gray-600">Book appointments at times that work for you.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-purple-100 p-2 rounded-lg mr-4">
+                                        <i class="fas fa-chart-line text-purple-700"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Progress Tracking</h4>
+                                        <p class="text-gray-600">Monitor your health improvements over time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Healthcare process" 
+                                 class="rounded-xl shadow-lg w-full h-auto hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -803,109 +951,132 @@
         <div class="modal-content">
             <h2 class="text-3xl font-bold mb-6 text-center gradient-text">All Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Additional Service 1 -->
+                <!-- Service 1 -->
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
-                        <i class="fas fa-procedures text-3xl text-indigo-600"></i>
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-4">
+                        <i class="fas fa-home text-3xl text-purple-700"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Post-Surgical Care</h3>
+                    <h3 class="text-xl font-bold mb-3">Home Visits</h3>
                     <ul class="space-y-2 text-gray-600">
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Wound dressing changes</span>
+                            <span>General health assessments</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Suture removal</span>
+                            <span>Chronic disease management</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Pain management</span>
+                            <span>Post-hospitalization care</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Recovery monitoring</span>
+                            <span>Medication management</span>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Additional Service 2 -->
+                <!-- Service 2 -->
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
-                        <i class="fas fa-heart text-3xl text-indigo-600"></i>
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-4">
+                        <i class="fas fa-running text-3xl text-purple-700"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Cardiac Care</h3>
+                    <h3 class="text-xl font-bold mb-3">Physiotherapy</h3>
                     <ul class="space-y-2 text-gray-600">
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>ECG monitoring</span>
+                            <span>Neurological rehabilitation</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Blood pressure management</span>
+                            <span>Sports rehabilitation</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Post-cardiac event care</span>
+                            <span>Lifestyle modifications</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Lifestyle counseling</span>
+                            <span>Mobility improvement</span>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Additional Service 3 -->
+                <!-- Service 3 -->
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
-                        <i class="fas fa-brain text-3xl text-indigo-600"></i>
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-4">
+                        <i class="fas fa-user-nurse text-3xl text-purple-700"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Neurological Care</h3>
+                    <h3 class="text-xl font-bold mb-3">Nursing Care</h3>
                     <ul class="space-y-2 text-gray-600">
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Stroke rehabilitation</span>
+                            <span>Wound care</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Parkinson's management</span>
+                            <span>IV therapy</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Multiple sclerosis care</span>
+                            <span>Catheter care</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Cognitive therapy</span>
+                            <span>Medication administration</span>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Additional Service 4 -->
+                <!-- Service 4 -->
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="bg-indigo-100 p-4 rounded-full inline-block mb-4">
-                        <i class="fas fa-baby text-3xl text-indigo-600"></i>
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-4">
+                        <i class="fas fa-briefcase-medical text-3xl text-purple-700"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Pediatric Care</h3>
+                    <h3 class="text-xl font-bold mb-3">Corporate Checkup</h3>
                     <ul class="space-y-2 text-gray-600">
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Newborn care</span>
+                            <span>Annual checkups</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Vaccinations</span>
+                            <span>Health advice and lifestyle modifications</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Developmental assessments</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                            <span>Childhood illness management</span>
+                            <span>Health awareness at workplace</span>
                         </li>
                     </ul>
                 </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-4">
+                        <i class="fas fa-utensils text-3xl text-purple-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Diet & Nutrition</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Diet for chronic diseases (Diabetes, Kidney, Hypertension)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Pediatric diet</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Weight management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button class="close-modal-btn bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-8 rounded-xl transition duration-300">
+                    Close
+                </button>
             </div>
         </div>
     </div>
@@ -914,10 +1085,10 @@
     <div id="home-visits-modal" class="service-modal">
         <div class="service-modal-content">
             <span class="close-service-modal">&times;</span>
-            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Home Visits Service</h2>
+            <h2 class="text-2xl font-bold mb-4 text-purple-700">Home Visits Service</h2>
             <div class="flex items-center mb-6">
-                <div class="bg-indigo-100 p-3 rounded-lg mr-4">
-                    <i class="fas fa-home text-2xl text-indigo-600"></i>
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-home text-2xl text-purple-700"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Complete medical care in your home</h3>
@@ -955,7 +1126,7 @@
                     </li>
                 </ul>
                 <div class="mt-8">
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
                         Book a Home Visit
                     </a>
                 </div>
@@ -966,10 +1137,10 @@
     <div id="physiotherapy-modal" class="service-modal">
         <div class="service-modal-content">
             <span class="close-service-modal">&times;</span>
-            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Physiotherapy Service</h2>
+            <h2 class="text-2xl font-bold mb-4 text-purple-700">Physiotherapy Service</h2>
             <div class="flex items-center mb-6">
-                <div class="bg-indigo-100 p-3 rounded-lg mr-4">
-                    <i class="fas fa-running text-2xl text-indigo-600"></i>
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-running text-2xl text-purple-700"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Restore movement and function</h3>
@@ -987,15 +1158,15 @@
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                        <span>Pain management techniques</span>
+                        <span>Neurological rehabilitation for stroke, Parkinson's, etc.</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                        <span>Therapeutic exercises to improve strength and flexibility</span>
+                        <span>Sports injury rehabilitation</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                        <span>Manual therapy and joint mobilization</span>
+                        <span>Lifestyle modification guidance</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
@@ -1007,7 +1178,7 @@
                     </li>
                 </ul>
                 <div class="mt-8">
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
                         Book Physiotherapy
                     </a>
                 </div>
@@ -1018,10 +1189,10 @@
     <div id="nursing-care-modal" class="service-modal">
         <div class="service-modal-content">
             <span class="close-service-modal">&times;</span>
-            <h2 class="text-2xl font-bold mb-4 text-indigo-600">Nursing Care Service</h2>
+            <h2 class="text-2xl font-bold mb-4 text-purple-700">Nursing Care Service</h2>
             <div class="flex items-center mb-6">
-                <div class="bg-indigo-100 p-3 rounded-lg mr-4">
-                    <i class="fas fa-user-nurse text-2xl text-indigo-600"></i>
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-user-nurse text-2xl text-purple-700"></i>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold">Professional medical assistance</h3>
@@ -1059,7 +1230,7 @@
                     </li>
                 </ul>
                 <div class="mt-8">
-                    <a href="#contact" class="btn-primary bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
                         Arrange Nursing Care
                     </a>
                 </div>
@@ -1067,109 +1238,112 @@
         </div>
     </div>
 
-    <!-- Process Section -->
-    <section id="process" class="py-20 process-bg process-section">
-        <div class="container mx-auto px-4 relative">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                    Our <span class="gradient-text">Simple Process</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Getting started with our home healthcare and rehabilitation services in Dar es Salaam is quick and easy.
-                </p>
-            </div>
-            
-            <div class="relative">
-                <!-- Process Steps with Advanced Animations -->
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <!-- Step 1 -->
-                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up">
-                        <div class="process-icon-advanced bg-gradient-to-r from-indigo-600 to-purple-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-gray-800">1. Contact Us</h3>
-                        <p class="text-gray-600">Call, email, or fill out our online form to schedule your first visit.</p>
-                    </div>
-                    
-                    <!-- Step 2 -->
-                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
-                        <div class="process-icon-advanced bg-gradient-to-r from-indigo-600 to-purple-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-gray-800">2. Initial Assessment</h3>
-                        <p class="text-gray-600">Our doctor visits your home for a comprehensive health evaluation.</p>
-                    </div>
-                    
-                    <!-- Step 3 -->
-                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
-                        <div class="process-icon-advanced bg-gradient-to-r from-indigo-600 to-purple-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                            <i class="fas fa-file-medical"></i>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-gray-800">3. Personalized Plan</h3>
-                        <p class="text-gray-600">We create a customized treatment plan based on your needs.</p>
-                    </div>
-                    
-                    <!-- Step 4 -->
-                    <div class="process-step-advanced text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
-                        <div class="process-icon-advanced bg-gradient-to-r from-indigo-600 to-purple-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-gray-800">4. Ongoing Care</h3>
-                        <p class="text-gray-600">We provide regular visits and adjust treatment as needed.</p>
-                    </div>
+    <div id="corporate-checkup-modal" class="service-modal">
+        <div class="service-modal-content">
+            <span class="close-service-modal">&times;</span>
+            <h2 class="text-2xl font-bold mb-4 text-purple-700">Corporate Checkup Service</h2>
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-briefcase-medical text-2xl text-purple-700"></i>
                 </div>
-                
-            
-            <!-- Process Visualization -->
-            <div class="mt-16 bg-white rounded-2xl shadow-xl p-8" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Visualizing Your Care Journey</h3>
-                        <p class="text-gray-600 mb-6">
-                            Our process is designed to be transparent and patient-focused. From your first contact to ongoing care in Dar es Salaam, we keep you informed every step of the way.
-                        </p>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="bg-indigo-100 p-2 rounded-lg mr-4">
-                                    <i class="fas fa-clock text-indigo-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Quick Response</h4>
-                                    <p class="text-gray-600">We respond to all inquiries within 24 hours.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-indigo-100 p-2 rounded-lg mr-4">
-                                    <i class="fas fa-calendar-alt text-indigo-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Flexible Scheduling</h4>
-                                    <p class="text-gray-600">Book appointments at times that work for you.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-indigo-100 p-2 rounded-lg mr-4">
-                                    <i class="fas fa-chart-line text-indigo-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Progress Tracking</h4>
-                                    <p class="text-gray-600">Monitor your health improvements over time.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                             alt="Healthcare process" 
-                             class="rounded-xl shadow-lg w-full h-auto hover:scale-105 transition-transform duration-500">
-                    </div>
+                <div>
+                    <h3 class="text-xl font-bold">Workplace health solutions</h3>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <p class="text-gray-700">
+                    Our corporate health services provide comprehensive workplace health solutions for businesses in Dar es Salaam. We help maintain a healthy workforce through regular checkups, health education, and preventive care.
+                </p>
+                <h4 class="font-bold text-lg mt-6 mb-2">What's Included:</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Annual health checkups for employees</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Personalized health advice and lifestyle modifications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Health awareness programs at workplace</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Chronic disease screening</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Vaccination programs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Stress management workshops</span>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
+                        Schedule Corporate Checkup
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div id="diet-modal" class="service-modal">
+        <div class="service-modal-content">
+            <span class="close-service-modal">&times;</span>
+            <h2 class="text-2xl font-bold mb-4 text-purple-700">Diet & Nutrition Service</h2>
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-utensils text-2xl text-purple-700"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Personalized dietary plans</h3>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <p class="text-gray-700">
+                    Our nutrition services provide expert dietary guidance tailored to your specific health needs. Whether managing a chronic condition or optimizing your family's nutrition, our dietitians create practical, sustainable eating plans.
+                </p>
+                <h4 class="font-bold text-lg mt-6 mb-2">What's Included:</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Diet plans for diabetes, kidney disease, hypertension</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Pediatric nutrition counseling</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Weight management programs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Nutritional assessment and analysis</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Meal planning and preparation guidance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Follow-up consultations</span>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <a href="#contact" class="btn-primary bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-xl transition duration-300">
+                        Consult a Dietitian
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-indigo-50">
+    <section id="testimonials" class="py-20 bg-purple-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
@@ -1199,7 +1373,7 @@
                     <p class="text-gray-600 italic mb-6">
                         "The care I received from HABARI DOCTOR was exceptional. The doctor was patient, thorough, and made me feel completely comfortable in my own home. I highly recommend their services to anyone needing medical care in Dar es Salaam."
                     </p>
-                    <div class="text-indigo-600">
+                    <div class="text-purple-700">
                         <i class="fas fa-quote-right text-3xl opacity-20"></i>
                     </div>
                 </div>
@@ -1222,7 +1396,7 @@
                     <p class="text-gray-600 italic mb-6">
                         "After my surgery, the physiotherapist from HABARI DOCTOR helped me regain my mobility faster than I expected. The convenience of having therapy at home made all the difference in my recovery."
                     </p>
-                    <div class="text-indigo-600">
+                    <div class="text-purple-700">
                         <i class="fas fa-quote-right text-3xl opacity-20"></i>
                     </div>
                 </div>
@@ -1245,80 +1419,9 @@
                     <p class="text-gray-600 italic mb-6">
                         "The nursing care for my elderly mother has been wonderful. The nurses are compassionate, professional, and always go above and beyond. It's such a relief to have this service available in Dar es Salaam."
                     </p>
-                    <div class="text-indigo-600">
+                    <div class="text-purple-700">
                         <i class="fas fa-quote-right text-3xl opacity-20"></i>
                     </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David K." class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold text-lg">David K.</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "The cardiac care I received at home was top-notch. The doctor was knowledgeable and took the time to explain everything. My recovery was much smoother thanks to HABARI DOCTOR."
-                    </p>
-                    <div class="text-indigo-600">
-                        <i class="fas fa-quote-right text-3xl opacity-20"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 5 -->
-                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Lisa P." class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-bold text-lg">Lisa P.</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "As a busy mom in Dar es Salaam, having pediatric care come to our home has been a game-changer. The doctor is wonderful with my kids and we don't have to deal with waiting rooms full of sick children."
-                    </p>
-                    <div class="text-indigo-600">
-                        <i class="fas fa-quote-right text-3xl opacity-20"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Testimonial Navigation Dots -->
-            <div class="flex justify-center mt-8 space-x-2" id="testimonial-dots">
-                <!-- Dots will be added by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <div class="max-w-3xl mx-auto" data-aos="zoom-in">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Better Healthcare at Home in Dar es Salaam?</h2>
-                <p class="text-xl mb-8 opacity-90">
-                    Schedule your first visit today and discover the difference personalized home healthcare can make.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#contact" class="btn-primary bg-white hover:bg-gray-100 text-indigo-600 font-bold py-4 px-8 rounded-xl text-lg shadow-lg transition duration-300">
-                        <i class="fas fa-phone-alt mr-2"></i> Call Now
-                    </a>
-                    <a href="#contact" class="btn-primary bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-lg transition duration-300">
-                        <i class="fas fa-envelope mr-2"></i> Email Us
-                    </a>
                 </div>
             </div>
         </div>
@@ -1343,31 +1446,37 @@
                         <form class="space-y-6">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Your Name</label>
-                                <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500">
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500">
                             </div>
                             <div>
                                 <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500">
                             </div>
                             <div>
                                 <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
-                                <select id="service" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <select id="service" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500">
                                     <option value="">Select a service</option>
                                     <option value="home-visit">Home Visit</option>
                                     <option value="physiotherapy">Physiotherapy</option>
                                     <option value="nursing-care">Nursing Care</option>
+                                    <option value="corporate-checkup">Corporate Checkup</option>
+                                    <option value="diet">Diet & Nutrition</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
-                                <textarea id="message" rows="5" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                                <label for="appointment-time" class="block text-gray-700 mb-2">Preferred Appointment Time</label>
+                                <input type="datetime-local" id="appointment-time" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500">
                             </div>
-                            <button type="submit" class="btn-primary w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl text-lg transition duration-300">
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" rows="5" class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl text-lg transition duration-300">
                                 Send Message
                             </button>
                         </form>
@@ -1379,54 +1488,50 @@
                         <h3 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
                         
                         <div class="space-y-8">
-                            <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                                <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                            <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                     <i class="fas fa-phone-alt text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg text-gray-800 mb-1">Phone</h4>
                                     <p class="text-gray-600">0655952960</p>
-                                    <p class="text-gray-600">24/7 Emergency: 0655952960</p>
                                 </div>
                             </div>
                             
-                            <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                                <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                            <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                     <i class="fab fa-whatsapp text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg text-gray-800 mb-1">WhatsApp</h4>
                                     <p class="text-gray-600">0655952960</p>
-                                    <a href="https://wa.me/255655952960" class="text-indigo-600 hover:text-indigo-800 font-medium inline-block mt-1">
+                                    <a href="https://wa.me/255655952960" class="text-purple-700 hover:text-purple-800 font-medium inline-block mt-1">
                                         <i class="fas fa-external-link-alt mr-1"></i> Chat Now
                                     </a>
                                 </div>
                             </div>
                             
-                            <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                                <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                            <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                     <i class="fas fa-envelope text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg text-gray-800 mb-1">Email</h4>
                                     <p class="text-gray-600">jamesmrisho@gmail.com</p>
-                                    <a href="mailto:jamesmrisho@gmail.com" class="text-indigo-600 hover:text-indigo-800 font-medium inline-block mt-1">
+                                    <a href="mailto:jamesmrisho@gmail.com" class="text-purple-700 hover:text-purple-800 font-medium inline-block mt-1">
                                         <i class="fas fa-external-link-alt mr-1"></i> Send Email
                                     </a>
                                 </div>
                             </div>
                             
-                            <div class="flex items-start p-4 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors">
-                                <div class="bg-indigo-600 text-white p-3 rounded-lg mr-4">
+                            <div class="flex items-start p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                <div class="bg-purple-700 text-white p-3 rounded-lg mr-4">
                                     <i class="fas fa-map-marker-alt text-xl"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-lg text-gray-800 mb-1">Office Address</h4>
                                     <p class="text-gray-600">123 Healthcare Avenue</p>
                                     <p class="text-gray-600">Dar es Salaam, Tanzania</p>
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium inline-block mt-1">
-                                        <i class="fas fa-directions mr-1"></i> Get Directions
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1434,32 +1539,22 @@
                         <div class="mt-12">
                             <h4 class="font-bold text-lg text-gray-800 mb-4">Follow Us</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="bg-indigo-100 text-indigo-600 p-4 rounded-full hover:bg-indigo-200 transition duration-300 hover:scale-110">
+                                <a href="#" class="bg-purple-100 text-purple-700 p-4 rounded-full hover:bg-purple-200 transition duration-300 hover:scale-110">
                                     <i class="fab fa-facebook-f text-xl"></i>
                                 </a>
-                                <a href="#" class="bg-indigo-100 text-indigo-600 p-4 rounded-full hover:bg-indigo-200 transition duration-300 hover:scale-110">
+                                <a href="#" class="bg-purple-100 text-purple-700 p-4 rounded-full hover:bg-purple-200 transition duration-300 hover:scale-110">
                                     <i class="fab fa-twitter text-xl"></i>
                                 </a>
-                                <a href="#" class="bg-indigo-100 text-indigo-600 p-4 rounded-full hover:bg-indigo-200 transition duration-300 hover:scale-110">
+                                <a href="#" class="bg-purple-100 text-purple-700 p-4 rounded-full hover:bg-purple-200 transition duration-300 hover:scale-110">
                                     <i class="fab fa-instagram text-xl"></i>
                                 </a>
-                                <a href="#" class="bg-indigo-100 text-indigo-600 p-4 rounded-full hover:bg-indigo-200 transition duration-300 hover:scale-110">
+                                <a href="#" class="bg-purple-100 text-purple-700 p-4 rounded-full hover:bg-purple-200 transition duration-300 hover:scale-110">
                                     <i class="fab fa-linkedin-in text-xl"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="mt-16 bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow" data-aos="fade-up">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.935676045644!2d39.20860031476996!3d-6.792995995093461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b0c28a38a91%3A0x1d90e1acf8a1a9f9!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -1470,10 +1565,10 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div data-aos="fade-up">
                     <div class="flex items-center mb-6">
-                        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-3 rounded-xl mr-3">
+                        <div class="bg-purple-700 text-white p-3 rounded-xl mr-3">
                             <i class="fas fa-house-medical text-2xl"></i>
                         </div>
-                        <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
+                        <h3 class="text-2xl font-bold text-purple-400">
                             HABARI DOCTOR
                         </h3>
                     </div>
@@ -1481,16 +1576,16 @@
                         Providing compassionate, professional home-based medical and rehabilitation services to help you heal in the comfort of your home in Dar es Salaam.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-indigo-600 transition duration-300">
+                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-indigo-600 transition duration-300">
+                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-indigo-600 transition duration-300">
+                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-indigo-600 transition duration-300">
+                        <a href="#" class="bg-gray-800 text-gray-300 hover:text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -1500,10 +1595,9 @@
                     <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
                     <ul class="space-y-3">
                         <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition duration-300">Process</a></li>
                         <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
-                        <li><a href="#process" class="text-gray-400 hover:text-white transition duration-300">Our Process</a></li>
-                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
                     </ul>
                 </div>
@@ -1514,28 +1608,23 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home Visits</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Physiotherapy</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Nursing Care</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Palliative Care</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Medical Escort</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Diagnostics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Corporate Checkup</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Diet & Nutrition</a></li>
                     </ul>
                 </div>
                 
                 <div data-aos="fade-up" data-aos-delay="300">
-                    <h4 class="text-lg font-bold mb-6 text-white">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">
-                        Subscribe to our newsletter for health tips and updates.
-                    </p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-3 rounded-l-lg w-full focus:outline-none text-gray-900">
-                        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-4 rounded-r-lg">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <div class="mt-8">
-                        <h4 class="text-lg font-bold mb-4 text-white">Emergency Contact</h4>
-                        <a href="tel:0655952960" class="text-indigo-400 hover:text-indigo-300 font-medium">
-                            <i class="fas fa-phone-alt mr-2"></i> 0655952960
-                        </a>
+                    <h4 class="text-lg font-bold mb-6 text-white">Emergency Contact</h4>
+                    <div class="flex items-start p-4 bg-gray-800 rounded-xl">
+                        <div class="bg-red-600 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <a href="tel:0655952960" class="text-white hover:text-purple-300 font-medium text-lg">
+                                0655952960
+                            </a>
+                            <p class="text-gray-400 text-sm mt-1">24/7 emergency service</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1549,18 +1638,18 @@
     <!-- Floating Contact Button -->
     <div class="fixed bottom-8 right-8 z-50">
         <div class="relative group">
-            <button class="floating-btn bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white w-16 h-16 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 transform group-hover:rotate-45">
+            <button class="floating-btn bg-purple-700 hover:bg-purple-800 text-white w-16 h-16 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 transform group-hover:rotate-45">
                 <i class="fas fa-comment-medical text-xl"></i>
             </button>
             
             <div class="absolute bottom-20 right-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 space-y-3">
-                <a href="tel:0655952960" class="bg-white text-indigo-600 hover:bg-indigo-50 w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+                <a href="tel:0655952960" class="bg-white text-purple-700 hover:bg-purple-50 w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
                     <i class="fas fa-phone text-xl"></i>
                 </a>
                 <a href="https://wa.me/255655952960" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
                     <i class="fab fa-whatsapp text-xl"></i>
                 </a>
-                <a href="mailto:jamesmrisho@gmail.com" class="bg-indigo-500 hover:bg-indigo-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+                <a href="mailto:jamesmrisho@gmail.com" class="bg-purple-700 hover:bg-purple-800 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
                     <i class="fas fa-envelope text-xl"></i>
                 </a>
             </div>
@@ -1642,6 +1731,7 @@
         const modal = document.getElementById('services-modal');
         const viewAllBtn = document.getElementById('view-all-services');
         const closeModal = document.querySelector('.close-modal');
+        const closeModalBtn = document.querySelector('.close-modal-btn');
         
         viewAllBtn.addEventListener('click', () => {
             modal.style.display = 'block';
@@ -1649,6 +1739,11 @@
         });
         
         closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        closeModalBtn.addEventListener('click', () => {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
@@ -1664,7 +1759,9 @@
         const serviceModals = {
             'home-visits': document.getElementById('home-visits-modal'),
             'physiotherapy': document.getElementById('physiotherapy-modal'),
-            'nursing-care': document.getElementById('nursing-care-modal')
+            'nursing-care': document.getElementById('nursing-care-modal'),
+            'corporate-checkup': document.getElementById('corporate-checkup-modal'),
+            'diet': document.getElementById('diet-modal')
         };
         
         const closeServiceModalButtons = document.querySelectorAll('.close-service-modal');
@@ -1718,7 +1815,7 @@
         }
         
         // Start counting when stats section is in view
-        const statsSection = document.querySelector('section.bg-gradient-to-r');
+        const statsSection = document.querySelector('section.bg-purple-700');
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1792,9 +1889,9 @@
         // Create dots
         testimonialCards.forEach((_, index) => {
             const dot = document.createElement('button');
-            dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-indigo-600', 'transition-colors');
+            dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300', 'hover:bg-purple-700', 'transition-colors');
             dot.setAttribute('data-index', index);
-            if (index === 0) dot.classList.add('bg-indigo-600');
+            if (index === 0) dot.classList.add('bg-purple-700');
             testimonialDotsContainer.appendChild(dot);
         });
         
@@ -1803,10 +1900,10 @@
         function updateDots(index) {
             dots.forEach((dot, i) => {
                 if (i === index) {
-                    dot.classList.add('bg-indigo-600');
+                    dot.classList.add('bg-purple-700');
                     dot.classList.remove('bg-gray-300');
                 } else {
-                    dot.classList.remove('bg-indigo-600');
+                    dot.classList.remove('bg-purple-700');
                     dot.classList.add('bg-gray-300');
                 }
             });
