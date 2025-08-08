@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Chatbase script -->
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="n8xYhWPK0GO8IY5O-Ze7b";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
     <style>
         :root {
             /* Light Theme (Default) */
@@ -1414,14 +1419,14 @@
         </div>
     </footer>
 
-    <!-- Floating Contact Button -->
-    <div class="fixed bottom-8 right-8 z-50">
+    <!-- Floating Contact Button - Moved to Left Side -->
+    <div class="fixed bottom-8 left-8 z-50">
         <div class="relative group">
             <button class="floating-btn bg-purple-700 hover:bg-purple-800 text-white w-16 h-16 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 transform group-hover:rotate-45">
                 <i class="fas fa-comment-medical text-xl"></i>
             </button>
             
-            <div class="absolute bottom-20 right-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 space-y-3">
+            <div class="absolute bottom-0 left-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 space-y-3">
                 <a href="tel:0655952960" class="bg-white text-purple-700 w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
                     <i class="fas fa-phone text-xl"></i>
                 </a>
@@ -1467,8 +1472,8 @@
                 localStorage.setItem('theme', theme);
             };
             
-            const savedTheme = localStorage.getItem('theme') || 
-                             (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            // Set default theme to light
+            const savedTheme = 'light';
             applyTheme(savedTheme);
             
             themeToggle.addEventListener('click', () => {
